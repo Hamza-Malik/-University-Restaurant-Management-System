@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="yellow_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="966.0" prefWidth="1683.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Selling_Items_Controller">
+   <children>
+      <JFXTabPane fx:id="main_tab" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="969.0" prefWidth="1683.0" style="-fx-background-color: #d1e0e0;">
+         <tabs>
+            <Tab text="Selling Items">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #d1e0e0;">
+                     <children>
+                        <Pane layoutX="54.0" layoutY="124.0" prefHeight="789.0" prefWidth="1575.0" style="-fx-border-color: #009688; -fx-border-radius: 20px;">
+                           <children>
+                              <PieChart fx:id="items_chart" layoutX="130.0" layoutY="36.0" legendSide="LEFT" prefHeight="581.0" prefWidth="1397.0" title="Selling Items Data" />
+                              <BarChart fx:id="sales_barchart" layoutX="174.0" layoutY="36.0" prefHeight="547.0" prefWidth="1373.0" title="Selling Items Data" visible="false">
+                                <xAxis>
+                                  <CategoryAxis fx:id="month_bottom" animated="false" label="Item" prefHeight="31.0" prefWidth="1312.0" side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis fx:id="pounds_left" side="LEFT" />
+                                </yAxis>
+                              </BarChart>
+                              <JFXButton buttonType="RAISED" layoutX="566.0" layoutY="684.0" onAction="#emp" opacity="0.87" prefHeight="57.0" prefWidth="231.0" style="-fx-background-color: #480000;" text="Show PieChart" textFill="WHITE">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <ImageView disable="true" fitHeight="28.0" fitWidth="30.0" layoutX="573.0" layoutY="698.0" opacity="0.88" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@Images/piechart.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXButton buttonType="RAISED" layoutX="849.0" layoutY="681.0" onAction="#show_bar" opacity="0.87" prefHeight="57.0" prefWidth="234.0" style="-fx-background-color: #480000;" text="Show BarChart" textFill="WHITE">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <ImageView disable="true" fitHeight="28.0" fitWidth="30.0" layoutX="859.0" layoutY="695.0" opacity="0.88" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@Images/barhart.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <ImageView fitHeight="63.0" fitWidth="76.0" layoutX="729.0" layoutY="24.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@Images/shoppingbag.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="820.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selling Items" textAlignment="CENTER">
+                           <font>
+                              <Font name="Cambria Math" size="38.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

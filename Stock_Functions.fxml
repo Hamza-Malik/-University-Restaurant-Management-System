@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1006.0" prefWidth="1913.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Stock_Functions_Controller">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="13.0" prefHeight="976.0" prefWidth="206.0" style="-fx-background-color: #921F1F; -fx-background-radius: 20px;">
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="18.0" layoutY="232.0" onAction="#show_add_stock" opacity="0.7" prefHeight="57.0" prefWidth="164.0" ripplerFill="#a3a818" style="-fx-background-color: #480000; -fx-background-radius: 10px;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="18.0" layoutY="773.0" onAction="#show_display_stock_item" opacity="0.71" prefHeight="57.0" prefWidth="164.0" ripplerFill="#1f00f7" style="-fx-background-color: #480000; -fx-background-radius: 10px;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Text disable="true" fill="WHITE" layoutX="75.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Stock" wrappingWidth="104.8681635260582">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Text>
+            <Text disable="true" fill="WHITE" layoutX="66.0" layoutY="808.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Display Stock" wrappingWidth="99.1406375169754">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Text>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="20.0" layoutY="20.0" onAction="#go_home" prefHeight="112.0" prefWidth="164.0" style="-fx-background-color: white; -fx-background-radius: 10px;" text="Button" />
+            <ImageView disable="true" fitHeight="100.0" fitWidth="152.0" layoutX="27.0" layoutY="26.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Images/logo.jpg" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="37.0" fitWidth="40.0" layoutX="28.0" layoutY="242.0" opacity="0.88" pickOnBounds="true">
+               <image>
+                  <Image url="@Images/stockkk.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="28.0" fitWidth="30.0" layoutX="25.0" layoutY="790.0" opacity="0.88" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../New%20folder/Admin_Access/src/application/images/tv-screen.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="471.0" onAction="#show_add_stock_item" opacity="0.7" prefHeight="57.0" prefWidth="164.0" ripplerFill="#a3a818" style="-fx-background-color: #480000; -fx-background-radius: 10px;" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Text disable="true" fill="WHITE" layoutX="59.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Stock Item" wrappingWidth="125.8681635260582">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Text>
+            <ImageView disable="true" fitHeight="31.0" fitWidth="30.0" layoutX="24.0" layoutY="484.0" opacity="0.88" pickOnBounds="true">
+               <image>
+                  <Image url="@Images/add.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane fx:id="yellow_pane" layoutX="232.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="966.0" prefWidth="1683.0">
+         <children>
+            <JFXTabPane layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="969.0" prefWidth="1683.0">
+               <tabs>
+                  <Tab text="Add Stock">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="907.0" prefWidth="1683.0" style="-fx-background-color: #d1e0e0;">
+                           <children>
+                              <Pane layoutX="32.0" layoutY="165.0" onKeyPressed="#check_number" prefHeight="740.0" prefWidth="1622.0" style="-fx-border-color: #009688; -fx-border-radius: 20px;">
+                                 <children>
+                                    <JFXTextField fx:id="stock_quantity_text" focusColor="#009688" labelFloat="true" layoutX="722.0" layoutY="364.0" maxWidth="303.0" minWidth="226.0" onKeyPressed="#check_number" prefHeight="37.0" prefWidth="303.0" promptText="Quantity">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </JFXTextField>
+                                    <Text layoutX="595.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Quantity" wrappingWidth="126.86822950839996">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="609.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Item">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXComboBox fx:id="stock_item_combo" editable="true" layoutX="722.0" layoutY="133.0" onAction="#check_selection" prefHeight="31.0" prefWidth="282.0" promptText="Select--" />
+                                    <JFXButton fx:id="add_stock_btn" buttonType="RAISED" layoutX="706.0" layoutY="564.0" onAction="#add_stock" opacity="0.87" prefHeight="57.0" prefWidth="193.0" style="-fx-background-color: #480000;" text="Add Stock" textFill="WHITE">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="18.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXButton>
+                                    <ImageView disable="true" fitHeight="28.0" fitWidth="30.0" layoutX="715.0" layoutY="578.0" opacity="0.88" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@Images/plus.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="invalid" fill="RED" layoutX="708.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="205.99996000528336">
+                                       <font>
+                                          <Font size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="measure_text" layoutX="1041.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="125.86816653609276">
+                                       <font>
+                                          <Font size="19.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                              <ImageView fitHeight="69.0" fitWidth="73.0" layoutX="622.0" layoutY="26.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@Images/warehouse.png" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="714.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Management" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Cambria Math" size="38.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="43.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Stock">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

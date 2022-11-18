@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main_Menu_Controller">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1004.0" prefWidth="1915.0">
+         <children>
+            <AnchorPane layoutX="-4.0" prefHeight="166.0" prefWidth="1921.0" style="-fx-background-color: #921F1F;" AnchorPane.bottomAnchor="838.0" AnchorPane.leftAnchor="-4.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button contentDisplay="GRAPHIC_ONLY" layoutX="21.0" layoutY="16.0" mnemonicParsing="false" opacity="0.96" prefHeight="121.0" prefWidth="272.0" style="-fx-background-color: white; -fx-background-radius: 20px;" />
+                  <ImageView fitHeight="112.0" fitWidth="250.0" layoutX="29.0" layoutY="21.0" opacity="0.76" pickOnBounds="true" style="-: black;">
+                     <image>
+                        <Image url="@Images/logo.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="657.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNIVERSITY RESTAURANT" wrappingWidth="895.6708984375">
+                     <font>
+                        <Font name="Bookman Old Style" size="46.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="840.0" fitWidth="1921.0" layoutX="-3.0" layoutY="165.0" nodeOrientation="INHERIT" pickOnBounds="true" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-3.0">
+               <image>
+                  <Image url="@Images/loginPagePic.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="10.0" layoutX="925.0" layoutY="382.0" onAction="#salesfunctions" opacity="0.61" prefHeight="169.0" prefWidth="250.0" ripplerFill="#971f1f" style="-fx-background-color: #480000;" text="Button" AnchorPane.bottomAnchor="456.0" AnchorPane.leftAnchor="925.0" AnchorPane.rightAnchor="740.0" AnchorPane.topAnchor="382.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="10.0" layoutX="675.0" layoutY="382.0" onAction="#stockfunctions" opacity="0.61" prefHeight="166.0" prefWidth="250.0" ripplerFill="#683d3d" style="-fx-background-color: #480000;" text="Button">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView disable="true" fitHeight="95.0" fitWidth="83.0" layoutX="759.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/warehouse.png" />
+               </image>
+            </ImageView>
+            <Text disable="true" fill="WHITE" layoutX="999.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales Records" wrappingWidth="173.48046875">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font>
+            </Text>
+            <ImageView disable="true" fitHeight="68.0" fitWidth="79.0" layoutX="1037.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/goods.png" />
+               </image>
+            </ImageView>
+            <Text disable="true" fill="WHITE" layoutX="726.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Records" wrappingWidth="182.48045614361763">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="exit_btn1" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="833.0" layoutY="758.0" opacity="0.61" prefHeight="68.0" prefWidth="166.0" ripplerFill="#20f000" style="-fx-background-color: #4dd2ff;" textAlignment="RIGHT" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="17.89" radius="8.445" spread="0.09" width="17.89" />
+               </effect>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <ImageView disable="true" fitHeight="44.0" fitWidth="51.0" layoutX="849.0" layoutY="770.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../New%20folder/Admin_Access/src/application/images/help.png" />
+               </image>
+            </ImageView>
+            <Text disable="true" fill="WHITE" layoutX="908.0" layoutY="800.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Help">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font>
+            </Text>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="10.0" layoutX="802.0" layoutY="548.0" onAction="#customersfunctions" opacity="0.61" prefHeight="166.0" prefWidth="250.0" ripplerFill="#683d3d" style="-fx-background-color: #480000;" text="Button">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView disable="true" fitHeight="95.0" fitWidth="83.0" layoutX="886.0" layoutY="572.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/customer.png" />
+               </image>
+            </ImageView>
+            <Text disable="true" fill="WHITE" layoutX="829.0" layoutY="684.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Records" wrappingWidth="209.48045614361763">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<JFXTabPane prefHeight="862.0" prefWidth="251.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <tabs>
+      <Tab text="With Meal">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="821.0" prefWidth="478.0">
+               <children>
+                  <JFXButton layoutX="25.0" layoutY="21.0" prefHeight="175.0" prefWidth="208.0" style="-fx-background-color: green;" text="Button" />
+                  <JFXButton layoutX="25.0" layoutY="628.0" prefHeight="175.0" prefWidth="208.0" style="-fx-background-color: green;" text="Button" />
+                  <JFXButton layoutX="25.0" layoutY="423.0" prefHeight="175.0" prefWidth="208.0" style="-fx-background-color: green;" text="Button" />
+                  <JFXButton layoutX="25.0" layoutY="220.0" prefHeight="175.0" prefWidth="208.0" style="-fx-background-color: green;" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</JFXTabPane>
